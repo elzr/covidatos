@@ -1,10 +1,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 	<head>
+		<!-- Required meta tags -->
 		<meta charset="utf-8">
-		<!-- Always force latest IE rendering engine or request Chrome Frame -->
-		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>🦠 Covidatos.mx: tablero del coronavirus en 🇲🇽 Mexico</title>
+		 <!-- Bootstrap CSS -->
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<title>🦠 Covidatos.mx: tablero del coronavirus covid19 en 🇲🇽 Mexico</title>
 		<style>
 			body {margin:0; padding:0}
 			iframe {width:100%; height:100%; border:0}
@@ -21,6 +24,70 @@
 		</script>
 	</head>
 	<body>
-		<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-4_A8_eaBHnYwKlzCyHRwpDDH2FpQb_bv7RYpbZzPN8-XpsIzwXJOXj8tC-giNKCbVe1LVjR0QpTT/pubhtml?widget=true&amp;headers=false"></iframe>
+		<div class="container"> 
+			<div class="row d-flex justify-content-center">
+				<div class="col-8 text-center">
+					<h1 class="my-3">🦠🇲🇽 COVIDatos.mx</h1>
+				</div>
+
+				<div class="col-12 my-2 py-2 col-lg-6 my-lg-2 py-lg-2">
+					<a href="img/piezas/2020-04abr-02-mapa.png">
+						<img class="col-12" src="img/piezas/2020-04abr-02-mapa.png" />
+					</a>
+				</div>
+
+				<div class="col-8 my-4 py-4 col-lg-6 my-lg-2 py-lg-2">
+					<a href="img/piezas/2020-04abr-02-pruebas.png">
+						<img class="col-12" src="img/piezas/2020-04abr-02-pruebas.png" />
+					</a>
+
+					<br />
+					<br />
+
+					<p>
+						<strong>Bienvenid@!</strong> Soy Eli (<a href="https://twitter.com/elzr">@elzr</a>) y <a href="https://twitter.com/elzr/status/1239298366984654853">desde el 14mar2020</a> mantengo este tablero del coronavirus en M&eacute;xico para canalizar mi ansiedad en una forma constructiva. 🙂 Uso el <a href="https://www.gob.mx/salud/documentos/informacion-internacional-y-nacional-sobre-nuevo-coronavirus-2019-ncov">comunicado técnico</a> que publica la Secretaría de Salud alrededor de las 19:00 horas todos los días a la par de <a href="https://www.youtube.com/channel/UCvzHrtf9by1-UY67SfZse8w/videos">su conferencia de prensa</a>. (Como gobierno inexplicablemente no guarda sus históricas tablas de confirmados y sospechosos, las estoy archivando <a href="https://drive.google.com/drive/folders/1bb7gdLeVtF0dp8o0pgLjkGvSt0RAHNis">aqui</a>.)
+					</p>
+					<p>
+						Estoy al pendiente todas las noches pero <b>me toma varias horas actualizar este tablero</b>. 😅 ¿Por qué? Sobretodo porque las tablas del gobierno no incluyen fecha de publicación del caso (tan solo vienen resaltados los casos nuevos del día, y no siempre es correcto el resaltado). Entonces tengo que inferir esa fecha cotejando tablas de ayer y de hoy. Cada día hay nuevas inconsistencias (quitan y reacomodan casos sin dar explicación) que guardo como anotaciones en la pestaña de <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=1779234405">confirmadosAnotaciones</a>. Escribí un poco más al respecto <a href="https://twitter.com/elzr/status/1245942225596489728">aquí</a>.
+					</p>
+					<p>
+					Publico este trabajo como una hoja de c&aacute;lculo de Google que <a href="#sheet">hasta abajo &darr;</a> viene incrustada. Si se despliega incorrectamente puedes consultar la hoja directamente <a href="http://bit.ly/covid19mexicohttps://twitter.com/elzr/status/1245942225596489728">aqui</a>. Tambien ahi puedes descargar los datos como csv o crear tu propia hoja y jugar con los datos de forma más interactiva. Me ayudo del procesamiento detallado del repositorio <a href="https://github.com/covidctdmx/covid_ctd_mx/">covid_ctd_mx</a>. Tambien recomiendo el repositorio <a href="https://github.com/guzmart/covid19_mex">covid19_mex</a> que hace un cotejo similar independiente.
+					</p>
+					<p>
+						Espero pronto ir publicando una versión más responsiva, completa y amigable de este tablero pero me come el tiempo casi todos los dias el tan solo procesar los datos. Si tienes cualquier duda o sugerencia de mejora no dudes en contactarme <a href="https://twitter.com/elzr">via Twitter</a>.
+					</p>
+					<p>
+						¡Ojala te sea útil este trabajo! 💛
+					</p>
+				</div>
+
+				<div class="col-8 mt-4">
+					<p>
+						Los <b>mapas de calor/color</b> a continuación fueron inspirados en gráficas parecidas del físico <a href="gráficas">Yaneer Bar-Yam</a>. Me pareció una forma genial de ver como van avanzando los casos por región, ¿no crees? Afortunadamente mi adaptación <a href="https://twitter.com/richardjensor/status/1245433258009079808">ha gustado</a> pero me gustaría hacerla más clara todavía. Experimenté con <a href="https://twitter.com/elzr/status/1241601670842388480">una versión animada</a> pero es tardado hacerla y no he tenido tiempo de actualizarla.
+					</p>
+					<p>
+						En fin, te la platico un poco. Los estados de México estan a los lados ordenados por su número total de casos a la fecha. El eje de izquierda a derecha es el tiempo y empezamos con el 28 de febrero hasta hoy que se dieron los primeros casos hasta hoy. El color va de verde (0) hasta rojo oscuro (más de 80 casos). Las categorías de color las iré adaptando conforme vaya progresando la epidemia. ¡Va a ser lindo cuando empiecen a reducirse los casos y se tiña de verde el map!
+					</p>
+					<p>
+						La primera versión es de casos <b>cumulativos</b> (total hasta la fecha) y la segunda versión es solo casos <b>nuevos</b> ese día. Ambas usan la misma escala de color a casos Ve la gráfica en grande si le das click.
+					</p>
+				</div>
+
+				<a href="img/heatmap/2020-04abr-02-cumulativos-v2.png">
+					<img class="col-12" src="img/heatmap/2020-04abr-02-cumulativos-v2.png" />
+				</a>
+				<a href="img/heatmap/2020-04abr-02-nuevos-v2.png">
+					<img class="col-12" src="img/heatmap/2020-04abr-02-nuevos-v2.png" />
+				</a>
+			</div>
+		</div>
+
+		<div id="sheet">
+			<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-4_A8_eaBHnYwKlzCyHRwpDDH2FpQb_bv7RYpbZzPN8-XpsIzwXJOXj8tC-giNKCbVe1LVjR0QpTT/pubhtml?widget=true&amp;headers=false"></iframe>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
