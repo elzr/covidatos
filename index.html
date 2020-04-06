@@ -7,12 +7,17 @@
 		 <!-- Bootstrap CSS -->
 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-		<title>🦠 Covidatos.mx: tablero del coronavirus covid19 en 🇲🇽 Mexico</title>
+		<title>Covidatos.mx: tablero del coronavirus en Mexico</title>
 		<style>
 			body {margin:0; padding:0}
 			/*iframe {width:100%; height:100%; border:0}*/
-			.p {color:#999}
+			.p {color:#999; font-size:90%}
 			.iframeGraphs iframe {border:1px solid #777; margin-bottom:2em}
+			h1 span {display:inline-block; padding:0.15em 0.35em; border-radius:0.25em; background:black; color:white}
+			span.hilite {background:#FFFBCC; padding:0.25em}
+
+			li {list-style-type:none; padding:0.25em}
+			h2 {margin-top:2em}
 		</style>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,38 +28,85 @@
 		  gtag('js', new Date());
 
 		  gtag('config', 'UA-161820457-1');
-
 		</script>
+
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- COMMON TAGS -->
+		<meta charset="utf-8">
+		<title>Covidatos.mx</title>
+		<!-- Search Engine -->
+		<meta name="description" content="tablero de coronavirus en México">
+		<meta name="image" content="https://covidatos.mx/img/social-card-preview.png">
+		<!-- Schema.org for Google -->
+		<meta itemprop="name" content="Covidatos.mx">
+		<meta itemprop="description" content="tablero de coronavirus en México">
+		<meta itemprop="image" content="https://covidatos.mx/img/social-card-preview.png">
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Covidatos.mx">
+		<meta name="twitter:description" content="tablero de coronavirus en México">
+		<meta name="twitter:site" content="@elzr">
+		<meta name="twitter:creator" content="@elzr">
+		<meta name="twitter:image:src" content="https://covidatos.mx/img/social-card-preview.png">
+		<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta name="og:title" content="Covidatos.mx">
+		<meta name="og:description" content="tablero de coronavirus en México">
+		<meta name="og:image" content="https://covidatos.mx/img/social-card-preview.png">
+		<meta name="og:url" content="https://covidatos.mx">
+		<meta name="og:site_name" content="Covidatos">
+		<meta name="og:type" content="website">
 	</head>
 	<body>
 		<div class="container"> 
 			<div class="row justify-content-center">
 				<div class="col-8 text-center">
-					<h1 class="my-3">🦠🇲🇽 Covidatos.mx</h1>
-					Actualizado <b>4 de Abril, 2020</b>.
+					<h1 class="my-3">🦠🇲🇽 <span><b>Covidatos</b>.mx</span></h1>
+					Actualizado <b>5 de Abril, 2020</b>.
+
+				</div>
+				<div class="col-10 my-2 text-center">
+					<a href="#intro" class="btn btn-outline-primary">
+						Introducción
+					</a>
+					<a href="#mapa-casos" class="btn btn-outline-primary">
+						Mapa de calor: <b>casos</b>
+					</a>
+					<a href="#mapa-defunciones" class="btn btn-outline-primary">
+						Mapa de calor: <b>defunciones</b>
+					</a>
+					<a href="#dimensiones" class="btn btn-outline-primary">
+						Procedencia, fecha, edad
+					</a>
 				</div>
 
-				<div class="col-12 my-2 py-2 col-lg-7 my-lg-2 py-lg-2">
-					<a href="img/piezas/2020-04abr-04-mapa.png">
-						<img class="col-12" src="img/piezas/2020-04abr-04-mapa-sm.png" />
+				<div id="intro" class="col-12 my-2 py-2 col-lg-7 my-lg-2 py-lg-2">
+					<a href="img/piezas/2020-04abr-05-mapa.png">
+						<img class="col-12" src="img/piezas/2020-04abr-05-mapa-sm.png" />
 					</a>
 				</div>
 				<div class="col-10 my-2 py-2 col-lg-5 my-lg-2 py-lg-2">
 					<p>
-						<strong>¡Bienvenid@!</strong> Soy Eli (<a href="https://twitter.com/elzr">@elzr</a>) y <a href="https://twitter.com/elzr/status/1239298366984654853">desde el 14mar2020</a> mantengo diario este tablero del coronavirus en M&eacute;xico para canalizar mi ansiedad en una forma constructiva. 🙂 Uso el <a href="https://www.gob.mx/salud/documentos/informacion-internacional-y-nacional-sobre-nuevo-coronavirus-2019-ncov">comunicado técnico</a> que publica la Secretaría de Salud alrededor de las 19:00 horas todos los días a la par de <a href="https://www.youtube.com/channel/UCvzHrtf9by1-UY67SfZse8w/videos">su conferencia de prensa</a>. <span class="p">(Sus datos tiene corte a las 13:00 y frecuentemente los gobiernos estatales tienen resultados más actuales pero es demasiado trabajo para mi compilarlos. <a href="https://covid19enmexico.com/">Este tablero</a> si intenta llevar un conteo así.)</span>
+						<strong>¡Bienvenid@!</strong> Soy Eli y <a href="https://twitter.com/elzr/status/1239298366984654853">desde el 14mar2020</a> mantengo diario este tablero del coronavirus en M&eacute;xico para canalizar mi ansiedad en una forma constructiva. 🙂 Uso el <a href="https://www.gob.mx/salud/documentos/informacion-internacional-y-nacional-sobre-nuevo-coronavirus-2019-ncov">comunicado técnico</a> que publica la Secretaría de Salud alrededor de las 19:00 horas todos los días a la par de <a href="https://www.youtube.com/channel/UCvzHrtf9by1-UY67SfZse8w/videos">su conferencia de prensa</a>. <span class="p">(Sus datos tienen corte a las 13:00 y frecuentemente los gobiernos estatales tienen resultados más actuales pero es demasiado trabajo para mi compilarlos. <a href="https://covid19enmexico.com/">Este tablero</a> si intenta llevar un conteo así.)</span>
 					</p>
 					<p>
-						Estoy al pendiente todas las noches pero <b>me toma varias horas actualizar este tablero</b>. 😅 <a href="https://twitter.com/elzr/status/1245942225596489728">¿Por qué?</a> Sobretodo porque las tablas del gobierno no incluyen fecha de publicación del caso <span class="p">(tan solo vienen resaltados los casos nuevos del día, y no siempre es correcto el resaltado)</span>. Entonces, para tener fechas correctas tengo que estar cotejando tablas de ayer y de hoy. Cada día hay nuevas inconsistencias por reconciliar <span class="p">(quitan, reacomodan y entremezclan casos sin dar explicación)</span> y guardo las m&aacute;s importantes como <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=1779234405">anotaciones</a>.
+						Estoy al pendiente todas las noches pero <b>me toma varias horas actualizar este tablero</b>. 😅 <a href="https://twitter.com/elzr/status/1245942225596489728">¿Por qué?</a> Sobretodo porque las tablas del gobierno no incluyen fecha de publicación del caso <span class="p">(tan solo vienen resaltados los casos nuevos del día, y no siempre es correcto el resaltado)</span>. Entonces, <span class="hilite">para tener fechas correctas tengo que estar cotejando tablas de ayer y de hoy</span>. Cada día hay nuevas inconsistencias por reconciliar <span class="p">(quitan, reacomodan y entremezclan casos sin dar explicación)</span> y guardo las m&aacute;s importantes como <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=1779234405">anotaciones</a>.
 					</p>
 					<p>
-						Publico este trabajo tambien como una <b>hoja de c&aacute;lculo de Google</b> en <a href="http://bit.ly/covid19mexico">bit.ly/covid19mexico</a>. Ah&iacute; estan mis <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=1779234405">anotaciones</a> que mencionaba y las tablas fuentes de <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=0">confirmados</a> y <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=588701461">sospechosos</a>. Puedes descargarlo todo como csv, Excel o <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/template/preview">crear tu propia copia en linea</a> y jugar con los datos de forma más interactiva!
+						<span class="hilite">Publico este trabajo tambien como una <b>hoja de c&aacute;lculo de Google</b></span> en <a href="http://bit.ly/covid19mexico">bit.ly/covid19mexico</a>. Ah&iacute; estan mis <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=1779234405">anotaciones</a> que mencionaba y las tablas fuentes de <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=0">confirmados</a> y <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=588701461">sospechosos</a>. Puedes descargarlo todo como csv, Excel o <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/template/preview">crear tu propia copia en linea</a> y jugar con los datos de forma más interactiva!
 					<p>
 
 					<p>
-						Me ayudo del genial procesamiento PDF a CSV del repositorio <a href="https://github.com/covidctdmx/covid_ctd_mx/">covid_ctd_mx</a>. Tambi&eacute;n recomiendo el repositorio <a href="https://github.com/guzmart/covid19_mex">covid19_mex</a> que hace un cotejo similar pero independiente al mio <span class="p">(allá usan columnas con tipos de inconsistencia y la numeración de casos difiere de la oficial)</span>. Como gobierno inexplicablemente no guarda sus históricas tablas de confirmados y sospechosos, <a href="https://drive.google.com/drive/folders/1bb7gdLeVtF0dp8o0pgLjkGvSt0RAHNis">las estoy archivando</a>. <span class="p">(Serendipia tambien mantiene <a href="https://serendipia.digital/2020/03/datos-abiertos-sobre-casos-de-coronavirus-covid-19-en-mexico/">un archivo</a>.)</span>
+						Me ayudo del <b>genial procesamiento PDF a CSV</b> del repositorio <a href="https://github.com/covidctdmx/covid_ctd_mx/">covid_ctd_mx</a>. El repositorio <a href="https://github.com/guzmart/covid19_mex">covid19_mex</a> hace un fechado por cotejo similar pero independiente al mio <span class="p">(allá usan columnas con tipos de inconsistencia y la numeración de casos difiere de la oficial)</span>. Como gobierno inexplicablemente no guarda sus históricas tablas de confirmados y sospechosos, <a href="https://drive.google.com/drive/folders/1bb7gdLeVtF0dp8o0pgLjkGvSt0RAHNis">las estoy archivando</a>. <span class="p">(Serendipia tambien mantiene <a href="https://serendipia.digital/2020/03/datos-abiertos-sobre-casos-de-coronavirus-covid-19-en-mexico/">un archivo</a>.)</span>
 					</p>
 					<p>
-					Espero pronto ir publicando una versión más responsiva, completa y amigable de este tablero pero me come el tiempo casi todos los dias el tan solo procesar los datos. Si ves algún error, tienes alguna duda o sugerencia de mejora <b>no dudes en contactarme</b> <a href="https://twitter.com/elzr">via Twitter</a>.
+						 Si ves algún error, tienes alguna duda o sugerencia de mejora <b>no dudes en contactarme</b> <a href="https://twitter.com/elzr">via Twitter</a>.
 					</p>
 					<p>
 						¡Ojala te sea útil este trabajo! 💛
@@ -65,6 +117,7 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
+				<h2 class="col-12 text-center" id="mapa-casos">Mapa de calor: casos</h2>
 				<div class="col-10 mt-4 col-lg-8">
 					<p>
 						Los <b>mapas de calor/color</b> a continuación fueron inspirados en gráficas parecidas del físico <a href="gráficas">Yaneer Bar-Yam</a>. Me pareció una forma genial de ver como van avanzando los casos por región, ¿no crees? Afortunadamente la adaptación <a href="https://twitter.com/richardjensor/status/1245433258009079808">ha gustado</a> pero me gustaría hacerla más clara todavía. Experimenté con <a href="https://twitter.com/elzr/status/1241601670842388480">una versión animada</a> pero es tardado hacerla y no he tenido tiempo de actualizarla.
@@ -77,32 +130,40 @@
 					</p>
 				</div>
 
-				<a href="img/mapa/casos/2020-04abr-04-cumulativos.png">
-					<img class="col-12" src="img/mapa/casos/2020-04abr-04-cumulativos.png" />
+				<a href="img/mapa/casos/2020-04abr-05-cumulativos.png">
+					<img class="col-12" src="img/mapa/casos/2020-04abr-05-cumulativos.png" />
 				</a>
-				<a href="img/mapa/casos/2020-04abr-04-nuevos.png">
-					<img class="col-12" src="img/mapa/casos/2020-04abr-04-nuevos.png" />
+				<a href="img/mapa/casos/2020-04abr-05-nuevos.png">
+					<img class="col-12" src="img/mapa/casos/2020-04abr-05-nuevos.png" />
 				</a>
 
-				<a href="img/mapa/defunciones/2020-04abr-04-cumulativos.png">
-					<img class="col-12" src="img/mapa/defunciones/2020-04abr-04-cumulativos.png" />
-				</a>
-				<a href="img/mapa/defunciones/2020-04abr-04-nuevos.png">
-					<img class="col-12" src="img/mapa/defunciones/2020-04abr-04-nuevos.png" />
-				</a>
+				<h2 id="mapa-defunciones">Mapa de calor: defunciones</h2>
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<a href="img/mapa/defunciones/2020-04abr-05-cumulativos.png">
+							<img class="col-12" src="img/mapa/defunciones/2020-04abr-05-cumulativos.png" />
+						</a>
+					</div>
+					<div class="col-lg-6 col-12">
+						<a href="img/mapa/defunciones/2020-04abr-05-nuevos.png">
+							<img class="col-12" src="img/mapa/defunciones/2020-04abr-05-nuevos.png" />
+						</a>
+					</div>
+				</div>
 			</div>
 			<div class="row justify-content-center">
+				<h2 class="col-12 text-center" id="dimensiones">Procedencia, fecha, edad</h2>
 				<div class="col-8 my-2 py-2 col-lg-4 my-lg-2 py-lg-2">
-					<a href="img/piezas/2020-04abr-04-dim.png">
-						<img class="col-12" src="img/piezas/2020-04abr-04-dim.png" />
+					<a href="img/piezas/2020-04abr-05-dim.png">
+						<img class="col-12" src="img/piezas/2020-04abr-05-dim.png" />
 					</a>
 				</div>
 				<div class="col-12 my-2 py-2 col-lg-8 my-lg-2 py-lg-2 iframeGraphs">
-					<iframe width="706" height="495" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-4_A8_eaBHnYwKlzCyHRwpDDH2FpQb_bv7RYpbZzPN8-XpsIzwXJOXj8tC-giNKCbVe1LVjR0QpTT/pubchart?oid=1048916648&amp;format=interactive"></iframe>
+					<iframe style="width:45em; min-height:31em" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-4_A8_eaBHnYwKlzCyHRwpDDH2FpQb_bv7RYpbZzPN8-XpsIzwXJOXj8tC-giNKCbVe1LVjR0QpTT/pubchart?oid=1048916648&amp;format=interactive"></iframe>
 
-					<iframe width="706" height="495" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-4_A8_eaBHnYwKlzCyHRwpDDH2FpQb_bv7RYpbZzPN8-XpsIzwXJOXj8tC-giNKCbVe1LVjR0QpTT/pubchart?oid=742698116&amp;format=interactive"></iframe>
+					<iframe style="width:45em; min-height:31em" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-4_A8_eaBHnYwKlzCyHRwpDDH2FpQb_bv7RYpbZzPN8-XpsIzwXJOXj8tC-giNKCbVe1LVjR0QpTT/pubchart?oid=742698116&amp;format=interactive"></iframe>
 
-					<iframe width="706" height="495" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-4_A8_eaBHnYwKlzCyHRwpDDH2FpQb_bv7RYpbZzPN8-XpsIzwXJOXj8tC-giNKCbVe1LVjR0QpTT/pubchart?oid=1137792737&amp;format=interactive"></iframe>
+					<iframe style="width:45em; min-height:31em"  frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-4_A8_eaBHnYwKlzCyHRwpDDH2FpQb_bv7RYpbZzPN8-XpsIzwXJOXj8tC-giNKCbVe1LVjR0QpTT/pubchart?oid=1137792737&amp;format=interactive"></iframe>
 				</div>
 			</div>
 			<div class="row justify-content-center">
