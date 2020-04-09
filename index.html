@@ -35,7 +35,7 @@
 			body {margin:0; padding:0}
 			/*iframe {width:100%; height:100%; border:0}*/
 			.p {color:#999; font-size:90%}
-			.iframeGraphs iframe {border:1px solid #777; margin-bottom:2em}
+			.iframeGraphs iframe {border:1px solid #777; margin-bottom:2em; background:white}
 			h1 span {display:inline-block; padding:0.15em 0.35em; border-radius:0.25em; background:black; color:white}
 			span.hilite {background:#FFFBCC; padding:0.25em}
 
@@ -67,30 +67,35 @@
 			<div class="row justify-content-center">
 				<div class="col-8 text-center">
 					<h1 class="my-3">🦠🇲🇽 <span><b>Covidatos</b>.mx</span></h1>
-					Actualizado <b>5 de Abril, 2020</b>.
-
+					Actualizado <b>8 de Abril, 2020</b>.
 				</div>
 
-				<div class="col-md-8 col-12 alert alert-danger my-4">
-					<h3>No actualizar&eacute; datos del 6abr2020</h2>
-					<p>
-					Hola! La tabla de casos positivos <a href="https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449">presentados</a> ayer a las 8pm20 por Secretar&iacute;a de Salud es DRASTICAMENTE diferente a la del 5abr2020 anterior.
-					</p>
+				<a href="img/mapa/small-multiples/2020-04abr-08.png">
+					<img class="col-12" src="img/mapa/small-multiples/2020-04abr-08.png" />
+				</a>
 
-					<p><a href="https://twitter.com/elzr/status/1247428446751526913?s=20">Es una locura la tabla oficial del 6abr2020.</a> No solo esta totalmente reordenada, "Procedencia" esta mutilada y falta "Fecha de llegada a México"... Es mucho más grave: trato de reconciliar los casos confirmados ayer y hoy y encuentro que <b>AGREGARON 1,741 casos y QUITARON 1,445!</b>
-					<p>
-					<p>
-						Si quieres verificar mi intento de conciliación, lo hice en <a href="https://docs.google.com/spreadsheets/d/1CEViZw5bsvz-M0fmlFrqsYfVSOo12Q2HvXpa5LTyldI/edit#gid=2013497571">una hoja de calculo</a> un poco intensa pero espero razonablemente clara.  Asigno a cada caso un nombre Estado-Género-Edad-InicioSintomas (los unicos atributos que sobreviven). 
-					</p>
-					<p>
-						<a href="https://docs.google.com/spreadsheets/d/1CEViZw5bsvz-M0fmlFrqsYfVSOo12Q2HvXpa5LTyldI/edit#gid=2013497571">
-							<img style="width:100%" src="img/conciliacion-lun6abr2020.png" />
+				<div class="row alert alert-danger my-4 text-center">
+					<div class="col-md-4 col-12 py-3">
+						<a href="https://twitter.com/elzr/status/1247997451476381697?s=20">
+							¿Qu&eacute; pasó en la <b>gran discontinuidad del 6abr2020</b>?
+							<img class="col-12" src="img/else/que-paso.png" />
 						</a>
-					</p>
-					<p>
-						Personalmente, creo que Salud tuvo un error exportando la tabla. Es la unica explicacion que me hace sentido. Ojala hoy 7abr2020 aclaren que paso.
-					</p>
+					</div>
+					<div class="col-md-4 col-12 py-3">
+						<a href="https://twitter.com/elzr/status/1247997455326679042?s=20">
+							¿Qu&eacute; voy a hacer?
+							<img class="col-12" src="img/else/que-voy-a-hacer.png" />
+						</a>
+					</div>
+					<div class="col-md-4 col-12 py-3">
+						<a href="https://twitter.com/RicardoDGPS/status/1248051077754187780">
+							¿Por qu&eacute; lo hicieron? 🤷‍♂️
+							<img class="col-12" src="img/else/migración-de-sistema.png" />
+							<img class="col-12" src="img/else/no-correctamente-compartido.png" />
+						</a>
+					</div>
 				</div>
+
 				<div class="col-10 my-2 text-center">
 					<a href="#intro" class="btn btn-outline-primary">
 						Introducción
@@ -107,8 +112,8 @@
 				</div>
 
 				<div id="intro" class="col-12 my-2 py-2 col-lg-7 my-lg-2 py-lg-2">
-					<a href="img/piezas/2020-04abr-05-mapa.png">
-						<img class="col-12" src="img/piezas/2020-04abr-05-mapa-sm.png" />
+					<a href="img/piezas/2020-04abr-08-mapa.png">
+						<img class="col-12" src="img/piezas/2020-04abr-08-mapa-sm.png" />
 					</a>
 				</div>
 				<div class="col-10 my-2 py-2 col-lg-5 my-lg-2 py-lg-2">
@@ -116,14 +121,15 @@
 						<strong>¡Bienvenid@!</strong> Soy Eli y <a href="https://twitter.com/elzr/status/1239298366984654853">desde el 14mar2020</a> mantengo diario este tablero del coronavirus en M&eacute;xico para canalizar mi ansiedad en una forma constructiva. 🙂 Uso el <a href="https://www.gob.mx/salud/documentos/informacion-internacional-y-nacional-sobre-nuevo-coronavirus-2019-ncov">comunicado técnico</a> que publica la Secretaría de Salud alrededor de las 19:00 horas todos los días a la par de <a href="https://www.youtube.com/channel/UCvzHrtf9by1-UY67SfZse8w/videos">su conferencia de prensa</a>. <span class="p">(Sus datos tienen corte a las 13:00 y frecuentemente los gobiernos estatales tienen resultados más actuales pero es demasiado trabajo para mi compilarlos. <a href="https://covid19enmexico.com/">Este tablero</a> si intenta llevar un conteo así.)</span>
 					</p>
 					<p>
-						Estoy al pendiente todas las noches pero <b>me toma varias horas actualizar este tablero</b>. 😅 <a href="https://twitter.com/elzr/status/1245942225596489728">¿Por qué?</a> Sobretodo porque las tablas del gobierno no incluyen fecha de publicación del caso <span class="p">(tan solo vienen resaltados los casos nuevos del día, y no siempre es correcto el resaltado)</span>. Entonces, <span class="hilite">para tener fechas correctas tengo que estar cotejando tablas de ayer y de hoy</span>. Cada día hay nuevas inconsistencias por reconciliar <span class="p">(quitan, reacomodan y entremezclan casos sin dar explicación)</span> y guardo las m&aacute;s importantes como <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=1779234405">anotaciones</a>.
+					<span style="text-decoration:line-through">Estoy al pendiente todas las noches pero <b>me toma varias horas actualizar este tablero</b>. 😅 <a href="https://twitter.com/elzr/status/1245942225596489728">¿Por qué?</a> Sobretodo porque las tablas del gobierno no incluyen fecha de publicación del caso <span class="p">(tan solo vienen resaltados los casos nuevos del día, y no siempre es correcto el resaltado)</span>. Entonces, <span class="hilite">para tener fechas correctas tengo que estar cotejando tablas de ayer y de hoy</span>. Cada día hay nuevas inconsistencias por reconciliar <span class="p">(quitan, reacomodan y entremezclan casos sin dar explicación)</span> y guardo las m&aacute;s importantes como <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=1779234405">anotaciones</a>.</span></br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esto cambio el 6abr, ahora hago la conciliación autom&aacute;tica en <a href="https://bit.ly/conciliacionCovid">bit.ly/conciliacionCovid</a>.
 					</p>
 					<p>
 						<span class="hilite">Publico este trabajo tambien como una <b>hoja de c&aacute;lculo de Google</b></span> en <a href="http://bit.ly/covid19mexico">bit.ly/covid19mexico</a>. Ah&iacute; estan mis <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=1779234405">anotaciones</a> que mencionaba y las tablas fuentes <b></i>fechadas</i></b> de <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=0">confirmados</a> y <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/edit#gid=588701461">sospechosos</a>. Puedes descargarlo todo como csv, Excel o <a href="https://docs.google.com/spreadsheets/d/1ihdwd-YY5h_wCkaaKVK0P70gjhxxRlLuNLYPQeJwrq8/template/preview">crear tu propia copia en linea</a> y jugar con los datos de forma más interactiva!
 					<p>
 
 					<p>
-						Me ayudo del <b>genial procesamiento PDF a CSV</b> del repositorio <a href="https://github.com/covidctdmx/covid_ctd_mx/">covid_ctd_mx</a>. El repositorio <a href="https://github.com/guzmart/covid19_mex">covid19_mex</a> hace un fechado por cotejo similar pero independiente al mio <span class="p">(allá usan columnas con tipos de inconsistencia y la numeración de casos difiere de la oficial)</span>. Como gobierno inexplicablemente no guarda sus históricas tablas de confirmados y sospechosos, <a href="https://drive.google.com/drive/folders/1bb7gdLeVtF0dp8o0pgLjkGvSt0RAHNis">las estoy archivando</a>. <span class="p">(Serendipia tambien mantiene <a href="https://serendipia.digital/2020/03/datos-abiertos-sobre-casos-de-coronavirus-covid-19-en-mexico/">un archivo</a>.)</span>
+						Me ayudo del <b>genial procesamiento PDF a CSV</b> del repositorio <a href="https://github.com/covidctdmx/covid_ctd_mx/">covid_ctd_mx</a>. Tambi&eacute;n recomiendo el trabajo meticulosamente anotado del repo de <a href="https://github.com/carranco-sga/Mexico-COVID-19">carranco-sga</a>. Como gobierno inexplicablemente no guarda sus históricas tablas de confirmados y sospechosos, <a href="https://drive.google.com/drive/folders/1bb7gdLeVtF0dp8o0pgLjkGvSt0RAHNis">las estoy archivando</a>. <span class="p">(Serendipia tambien mantiene <a href="https://serendipia.digital/2020/03/datos-abiertos-sobre-casos-de-coronavirus-covid-19-en-mexico/">un archivo lindo de CSVs</a>.)</span>
 					</p>
 					<p>
 						 Si ves algún error, tienes alguna duda o sugerencia de mejora <b>no dudes en contactarme</b> <a href="https://twitter.com/elzr">via Twitter</a>.
@@ -150,29 +156,32 @@
 					</p>
 				</div>
 
-				<a href="img/mapa/casos/2020-04abr-05-cumulativos.png">
-					<img class="col-12" src="img/mapa/casos/2020-04abr-05-cumulativos.png" />
+				<a href="img/mapa/casos/2020-04abr-08-cumulativos.png">
+					<img class="col-12" src="img/mapa/casos/2020-04abr-08-cumulativos.png" />
 				</a>
-				<a href="img/mapa/casos/2020-04abr-05-nuevos.png">
-					<img class="col-12" src="img/mapa/casos/2020-04abr-05-nuevos.png" />
+				<a href="img/mapa/casos/2020-04abr-08-nuevos.png">
+					<img class="col-12" src="img/mapa/casos/2020-04abr-08-nuevos.png" />
 				</a>
 
 				<h2 id="mapa-defunciones">Mapa de calor: defunciones</h2>
 				<div class="row">
 					<div class="col-lg-6 col-12">
-						<a href="img/mapa/defunciones/2020-04abr-05-cumulativos.png">
-							<img class="col-12" src="img/mapa/defunciones/2020-04abr-05-cumulativos.png" />
+						<a href="img/mapa/defunciones/2020-04abr-08-cumulativos.png">
+							<img class="col-12" src="img/mapa/defunciones/2020-04abr-08-cumulativos.png" />
 						</a>
 					</div>
 					<div class="col-lg-6 col-12">
-						<a href="img/mapa/defunciones/2020-04abr-05-nuevos.png">
-							<img class="col-12" src="img/mapa/defunciones/2020-04abr-05-nuevos.png" />
+						<a href="img/mapa/defunciones/2020-04abr-08-nuevos.png">
+							<img class="col-12" src="img/mapa/defunciones/2020-04abr-08-nuevos.png" />
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="row justify-content-center">
-				<h2 class="col-12 text-center" id="dimensiones">Procedencia, fecha, edad</h2>
+			<div class="row justify-content-center alert alert-danger mt-4">
+				<h2 class="col-12 mt-2 text-center" id="dimensiones">Procedencia, fecha, edad</h2>
+				<p class="col-10 mt-4 mx-2 col-lg-8">
+				Estas gráficas se dejan de actualizar desde la gran discontinuidad de casos del 6abr2020 :(. La columna de <b>procedencia</b> por ejemplo cambió mucho el 6abr y ya no lo publican desde el 8abr2020.
+				</p>
 				<div class="col-8 my-2 py-2 col-lg-4 my-lg-2 py-lg-2">
 					<a href="img/piezas/2020-04abr-05-dim.png">
 						<img class="col-12" src="img/piezas/2020-04abr-05-dim.png" />
